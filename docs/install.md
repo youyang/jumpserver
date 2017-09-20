@@ -56,7 +56,7 @@
 ##### 2.4 初始化数据库
 
 	$ cd utils
-	$ sh make_migrations.sh
+	$ sh make_migrations.sh // 如果你看到ModuleNotFoundError: No module named 'MySQLdb'这样的报错，你的python版本是3.*，请安装mysqlclient
 	$ sh init_db.sh
 
 ##### 2.5 安装redis server
